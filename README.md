@@ -14,6 +14,8 @@ Documentation for each subcommand:
 - [save](commands/save.md)
 - [load](commands/load.md)
 - [vacuum](commands/vacuum.md)
+- [vacuum-full-analyze](commands/vacuum.md)
+- [vacuum-full-freeze-analyze](commands/vacuum.md)
 - [psql](commands/psql.md)
 
 ## General Usage
