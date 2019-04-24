@@ -1,6 +1,6 @@
 NAME       := postgres-toolbox
 TAG        := latest
-IMAGE_NAME := panubo/$(NAME)
+IMAGE_NAME := xitcamp/$(NAME)
 
 .PHONY: build test push clean
 build:
