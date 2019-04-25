@@ -7,7 +7,7 @@ RUN apk add --update bash findutils gzip postgresql-client && \
 
 COPY commands /commands
 
-RUN echo "\pset statement_timeout 0" > /root/.psqlrc
+RUN echo "\set AUTOCOMMIT OFF" > /root/.psqlrc
 
 ENTRYPOINT ["/commands/entry.sh"]
 
