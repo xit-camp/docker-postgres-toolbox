@@ -7,7 +7,7 @@ RUN apk add --update bash findutils gzip postgresql-client && \
 
 COPY commands /commands
 
-RUN echo -e "\SET QUIET 1\nSET statement_timeout to 0;\ncommit;\n\SET QUIET 0\n" > /root/.psqlrc
+  RUN echo -e "\SET QUIET on\nSET statement_timeout to 0;\ncommit;\n\SET QUIET off\n" > /root/.psqlrc
 
 ENTRYPOINT ["/commands/entry.sh"]
 
