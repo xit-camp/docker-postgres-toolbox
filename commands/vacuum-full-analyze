@@ -16,7 +16,7 @@ fi
 echo -n "Vacuuming..."
 for DB in $DATABASES; do
     echo -n " $DB"
-    $PSQL -t --dbname=${DB} -c 'VACUUM FULL VERBOSE ANALYZE;' > /dev/null
+    $PSQL -t --dbname=${DB} -c 'SET statement_timeout = 0; VACUUM FULL VERBOSE ANALYZE;' > /dev/null
 done
 echo ". Done."
 
