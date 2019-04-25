@@ -12,7 +12,7 @@ else
     DATABASES=$@
 fi
 
-$PSQL -c "show statement_timeout;"
+#$PSQL -c "show statement_timeout;"
 
 # Perform the vacuum
 echo -n "Vacuuming..."
